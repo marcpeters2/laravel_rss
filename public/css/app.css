@@ -55,6 +55,10 @@ body {
   text-decoration: none;
 }
 
+.news__item a:visited {
+  color: gray;
+}
+
 .news__item__hostname {
   color: gray;
   font-size: 0.75em;
