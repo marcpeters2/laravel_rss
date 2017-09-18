@@ -10,8 +10,14 @@ body {
 }
 
 #home {
-  margin: 10px 75px;
+  margin: 0;
   background-color: #f6f6ef;
+}
+
+@media (min-width: 768px) {
+  #home {
+    margin: 10px 75px;
+  }
 }
 
 .news {

@@ -21,9 +21,6 @@
                 <span class="news__item__hostname">({{parse_url($item->link, PHP_URL_HOST)}})</span>
                 </a>
             </li>
-            {{--<div>--}}
-            {{--{{json_encode($item)}}--}}
-            {{--</div>--}}
         @endforeach
     </ol>
 </div>

@@ -1,6 +1,5 @@
-
-// Variables
 @import "variables";
+@import "mediaquery";
 
 $list-item-spacing: 8px;
 
@@ -17,8 +16,12 @@ body {
 }
 
 #home {
-  margin: 10px 75px;
-  background-color: rgb(246, 246, 239);
+  margin: 0;
+  background-color: $light-grey;
+
+  @include medium-and-up {
+    margin: 10px 75px;
+  }
 }
 
 .news {
@@ -47,7 +50,7 @@ body {
     text-align: right;
     content: counter(news-item-counter) ". ";
     counter-increment: news-item-counter;
-    color: gray;
+    color: $grey;
   }
 
   a {
@@ -55,17 +58,16 @@ body {
     text-decoration: none;
 
     &:visited {
-      color: gray;
+      color: $grey;
     }
   }
 }
 
 .news__item__hostname {
-  color: gray;
+  color: $grey;
   font-size: 0.75em;
 
   &:hover {
     text-decoration: underline;
   }
 }
-
